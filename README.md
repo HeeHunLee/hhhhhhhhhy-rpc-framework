@@ -1,13 +1,5 @@
 # hhhhhhhhhy-rpc-framework
 
-<div align="center">
-  <p> 中文| <a href="./README-EN.md">English</a>
-  </p>
-  <p>
-    <a href="https://github.com/Snailclimb/hhhhhhhhhy-rpc-framework">Github</a> | <a href="https://gitee.com/SnailClimb/hhhhhhhhhy-rpc-framework ">Gitee</a>
-  </p>
-</div>
-
 ## 介绍
 
 ### 一个基本的 RPC 框架设计思路
