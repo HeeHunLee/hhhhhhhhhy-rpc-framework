@@ -1,38 +1,20 @@
-# guide-rpc-framework
-
-> [该 RPC 框架配套教程已经更新在我的星球，点击此链接了解详情。](https://javaguide.cn/zhuanlan/handwritten-rpc-framework.html)
+# hhhhhhhhhy-rpc-framework
 
 <div align="center">
   <p> 中文| <a href="./README-EN.md">English</a>
   </p>
   <p>
-    <a href="https://github.com/Snailclimb/guide-rpc-framework">Github</a> | <a href="https://gitee.com/SnailClimb/guide-rpc-framework ">Gitee</a>
+    <a href="https://github.com/Snailclimb/hhhhhhhhhy-rpc-framework">Github</a> | <a href="https://gitee.com/SnailClimb/hhhhhhhhhy-rpc-framework ">Gitee</a>
   </p>
 </div>
 
-## 前言
-
-虽说 RPC 的原理实际不难，但是，自己在实现的过程中自己也遇到了很多问题。[guide-rpc-framework](https://github.com/Snailclimb/guide-rpc-framework) 目前只实现了 RPC 框架最基本的功能，一些可优化点都在下面提到了，有兴趣的小伙伴可以自行完善。
-
-通过这个简易的轮子，你可以学到 RPC 的底层原理和原理以及各种 Java 编码实践的运用。
-
-你甚至可以把 [guide-rpc-framework](https://github.com/Snailclimb/guide-rpc-framework) 当做你的毕设/项目经验的选择，这是非常不错！对比其他求职者的项目经验都是各种系统，造轮子肯定是更加能赢得面试官的青睐。
-
-如果你要将 [guide-rpc-framework](https://github.com/Snailclimb/guide-rpc-framework) 当做你的毕设/项目经验的话，我希望你一定要搞懂，而不是直接复制粘贴我的思想。你可以 fork 我的项目，然后进行优化。如果你觉得的优化是有价值的话，你可以提交 PR 给我，我会尽快处理。
-
 ## 介绍
-
- [guide-rpc-framework](https://github.com/Snailclimb/guide-rpc-framework) 是一款基于 Netty+Kyro+Zookeeper 实现的 RPC 框架。代码注释详细，结构清晰，并且集成了 Check Style 规范代码结构，非常适合阅读和学习。
-
-由于 Guide哥自身精力和能力有限，如果大家觉得有需要改进和完善的地方的话，欢迎 fork 本项目，然后 clone 到本地，在本地修改后提交 PR 给我，我会在第一时间 Review 你的代码。
-
-**我们先从一个基本的 RPC 框架设计思路说起！**
 
 ### 一个基本的 RPC 框架设计思路
 
 > **注意** ：我们这里说的 RPC 框架指的是：可以让客户端直接调用服务端方法就像调用本地方法一样简单的框架，比如我前面介绍的 Dubbo、Motan、gRPC 这些。 如果需要和 HTTP 协议打交道，解析和封装 HTTP 请求和响应。这类框架并不能算是“RPC 框架”，比如 Feign。
 
-一个最简单的 RPC 框架使用示意图如下图所示,这也是 [guide-rpc-framework](https://github.com/Snailclimb/guide-rpc-framework) 目前的架构 ：
+一个最简单的 RPC 框架使用示意图如下图所示,这也是 hhhhhhhhhy-rpc-framework 目前的架构 ：
 
 ![](./images/rpc-architure.png)
 
@@ -70,7 +52,7 @@
 - [x] **客户端调用远程服务的时候进行负载均衡** ：调用服务的时候，从很多服务地址中根据相应的负载均衡算法选取一个服务地址。ps：目前实现了随机负载均衡算法与一致性哈希算法。
 - [x] **处理一个接口有多个类实现的情况** ：对服务分组，发布服务的时候增加一个 group 参数即可。
 - [x] **集成 Spring 通过注解注册服务**
-- [x] **集成 Spring 通过注解进行服务消费** 。参考： [PR#10](https://github.com/Snailclimb/guide-rpc-framework/pull/10)
+- [x] **集成 Spring 通过注解进行服务消费** 。
 - [x] **增加服务版本号** ：建议使用两位数字版本，如：1.0，通常在接口不兼容时版本号才需要升级。为什么要增加服务版本号？为后续不兼容升级提供可能，比如服务接口增加方法，或服务模型增加字段，可向后兼容，删除方法或删除字段，将不兼容，枚举类型新增字段也不兼容，需通过变更版本号升级。
 - [x] **对 SPI 机制的运用** 
 - [ ] **增加可配置比如序列化方式、注册中心的实现方式,避免硬编码** ：通过 API 配置，后续集成 Spring 的话建议使用配置文件的方式进行配置
@@ -91,7 +73,7 @@
 
 ### 导入项目
 
-fork 项目到自己的仓库，然后克隆项目到自己的本地：`git clone git@github.com:username/guide-rpc-framework.git`，使用 IDEA 打开，等待项目初始化完成。
+fork 项目到自己的仓库，然后克隆项目到自己的本地：`git clone git@github.com:username/hhhhhhhhhy-rpc-framework.git`，使用 IDEA 打开，等待项目初始化完成。
 
 ### 初始化 git hooks
 
@@ -102,8 +84,8 @@ fork 项目到自己的仓库，然后克隆项目到自己的本地：`git clon
 执行下面这些命令：
 
 ```shell
-➜  guide-rpc-framework git:(master) ✗ chmod +x ./init.sh
-➜  guide-rpc-framework git:(master) ✗ ./init.sh
+➜  hhhhhhhhhy-rpc-framework git:(master) ✗ chmod +x ./init.sh
+➜  hhhhhhhhhy-rpc-framework git:(master) ✗ ./init.sh
 ```
 
 `init.sh` 这个脚本的主要作用是将 git commit 钩子拷贝到项目下的 `.git/hooks/` 目录，这样你每次 commit 的时候就会执行了。
@@ -264,10 +246,3 @@ System.out.println(hello);
 1. 基本概念；
 2. 数据结构；
 3. 如何使用 Netflix 公司开源的 zookeeper 客户端框架 Curator 进行增删改查；
-
-## 教程
-
-Guide 的星球正在更新《从零开始手把手教你实现一个简单的 RPC 框架》。扫描下方二维码关注“**JavaGuide**”后回复 “**星球**”即可。
-
-![我的公众号](https://my-blog-to-use.oss-cn-beijing.aliyuncs.com/2019-6/167598cd2e17b8ec.png)
-
