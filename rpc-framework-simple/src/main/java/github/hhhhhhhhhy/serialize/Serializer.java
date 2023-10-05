@@ -5,7 +5,7 @@ import github.hhhhhhhhhy.extension.SPI;
 /**
  * 序列化接口，所有序列化类都要实现这个接口
  *
- * @author shuang.kou
+ * @author hhhhhhhhhy
  */
 @SPI
 public interface Serializer {

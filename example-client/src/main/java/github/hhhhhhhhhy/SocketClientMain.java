@@ -6,7 +6,7 @@ import github.hhhhhhhhhy.remoting.transport.RpcRequestTransport;
 import github.hhhhhhhhhy.remoting.transport.socket.SocketRpcClient;
 
 /**
- * @author shuang.kou
+ * @author hhhhhhhhhy
  * @createTime 2020年05月10日 07:25:00
  */
 public class SocketClientMain {

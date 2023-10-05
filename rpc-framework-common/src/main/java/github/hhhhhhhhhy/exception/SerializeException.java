@@ -1,7 +1,7 @@
 package github.hhhhhhhhhy.exception;
 
 /**
- * @author shuang.kou
+ * @author hhhhhhhhhy
  * @createTime 2020年05月13日 19:54:00
  */
 public class SerializeException extends RuntimeException {

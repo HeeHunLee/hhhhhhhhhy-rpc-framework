@@ -3,7 +3,7 @@ package github.hhhhhhhhhy.exception;
 import github.hhhhhhhhhy.enums.RpcErrorMessageEnum;
 
 /**
- * @author shuang.kou
+ * @author hhhhhhhhhy
  * @createTime 2020年05月12日 16:48:00
  */
 public class RpcException extends RuntimeException {

@@ -4,7 +4,7 @@ import github.hhhhhhhhhy.remoting.transport.socket.SocketRpcServer;
 import github.hhhhhhhhhy.serviceimpl.HelloServiceImpl;
 
 /**
- * @author shuang.kou
+ * @author hhhhhhhhhy
  * @createTime 2020年05月10日 07:25:00
  */
 public class SocketServerMain {
