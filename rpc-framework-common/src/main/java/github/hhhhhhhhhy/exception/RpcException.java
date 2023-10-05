@@ -4,7 +4,7 @@ import github.hhhhhhhhhy.enums.RpcErrorMessageEnum;
 
 /**
  * @author hhhhhhhhhy
- * @createTime 2020年05月12日 16:48:00
+ * @createTime 2023年05月12日 16:48:00
  */
 public class RpcException extends RuntimeException {
     public RpcException(RpcErrorMessageEnum rpcErrorMessageEnum, String detail) {

@@ -7,7 +7,7 @@ import github.hhhhhhhhhy.remoting.dto.RpcRequest;
  * send RpcRequest。
  *
  * @author hhhhhhhhhy
- * @createTime 2020年05月29日 13:26:00
+ * @createTime 2023年05月29日 13:26:00
  */
 @SPI
 public interface RpcRequestTransport {

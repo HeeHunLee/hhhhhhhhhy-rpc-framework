@@ -140,7 +140,7 @@ Publish services (transport using Netty) :
  * Server: Automatic registration service via @RpcService annotation
  *
  * @author hhhhhhhhhy
- * @createTime 2020年05月10日 07:25:00
+ * @createTime 2023年05月10日 07:25:00
  */
 @RpcScan(basePackage = {"github.hhhhhhhhhy.serviceimpl"})
 public class NettyServerMain {
